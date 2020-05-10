@@ -96,7 +96,7 @@ function checkCase5(num)
         cases5[num-1].setAttribute('onclick','');
         
         keys5[isKey5-1].setAttribute('onclick','');
-        keys5[isKey5-1].style.border = '20px solid green';
+        keys5[isKey5-1].style.border = '10px solid green';
         
         count5++;
         if (count5 == 5) {
@@ -118,7 +118,7 @@ function selectKey5(num)
     if (isKey5 == num) isKey5 = 0;
     else {
         isKey5 = num;
-        keys5[isKey5-1].style.border = '6px solid blue';
+        keys5[isKey5-1].style.border = '4px solid blue';
     }
 }
 
