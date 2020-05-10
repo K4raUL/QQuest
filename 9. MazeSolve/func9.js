@@ -155,7 +155,7 @@ function drawMaze()
 function drawCell(i, j)
 {
     ctx.clearRect(left9 + i*cell9W, top9 + j*cell9H, cell9W, cell9H);
-    ctx.lineWidth = 16;
+    ctx.lineWidth = 8;
     
     if (i == key[0] && j == key[1]) drawKey();
     if (i == x0 && j == y0+1 && part3 == 0) {
@@ -248,7 +248,7 @@ function drawTimer(sec)
 {
     var ctxcpy = ctx;
     
-    ctxcpy.clearRect(left9 + sec*cell9W*M/60, 3, cell9W*M/60, 40);
+    ctxcpy.clearRect(left9 + sec*cell9W*M/60, 3, cell9W*M/60, 15);
     //ctxcpy.fillStyle = "green";
     //ctxcpy.fillRect(left9, 3, cell9W*M*sec/100, 40);
 
@@ -271,7 +271,7 @@ function drawTimer(sec)
 
             //ctxcpy.clearRect(left9 + time0*cell9W*M/60, 3, cell9W*M/60, 40);
             ctxcpy.fillStyle = "green";
-            ctxcpy.fillRect(left9, 3, cell9W*M*sec/60, 40);
+            ctxcpy.fillRect(left9, 3, cell9W*M*sec/60, 15);
             
             rotcount++;
             if (rotcount == 15) clearInterval(timer1);
@@ -283,7 +283,7 @@ function drawTimer(sec)
 function startTimer()
 {
     ctx.fillStyle = "green";
-    ctx.fillRect(left9, 3, cell9W*M, 40);
+    ctx.fillRect(left9, 3, cell9W*M, 15);
     
     timer0 = setInterval(function(){ 
         time0 -= 1; 
