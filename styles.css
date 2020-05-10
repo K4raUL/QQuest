@@ -1,0 +1,84 @@
+.draw {
+	/*display: inline-block;*/
+
+    height: 95vh;
+    width: 97vw;
+    
+    text-align:center;
+    
+    /*border:1px solid #99A3A4;
+    box-sizing: border-box;*/
+}
+
+button {
+    font: 60px Arial black;
+}
+
+.t10 {
+    display: inline-block;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    width: 20%;
+    height: 90%;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    text-align:center;
+}
+
+canvas {
+    /*height: 100%;
+    width: 100%;*/
+
+	display: inline-block;
+    /*border: 1px solid black;*/
+}
+
+textarea {
+    border: none;
+    resize: none;
+    display: block;
+    font: 48px Calibri black;
+    
+    width: 99%;
+}
+
+img {
+    position: absolute;
+    display: none;
+}
+
+#task4btn,
+#task3btn {
+    display: none;
+}
+
+#codiv {
+    /*border: 2px solid black;*/
+    
+    margin-top: 50px;
+    
+    height: 95%;
+    width: 20%;
+    
+    vertical-align: top; 
+    text-align:center;
+}
+
+#code3 {
+    margin-top: 50px;
+    border: 2px solid blue;
+}
+
+
