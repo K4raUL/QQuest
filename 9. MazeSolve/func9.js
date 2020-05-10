@@ -287,7 +287,12 @@ function startTimer()
     
     timer0 = setInterval(function(){ 
         time0 -= 1; 
-        if(time0 == 0) init9();
+        if(time0 == 0) {
+            ctx.translate(cnv.width/2, cnv.height/2);
+            ctx.rotate(-rotangle*Math.PI/180);
+            ctx.translate(-cnv.width/2, -cnv.height/2);
+            init9();
+        }
         drawTimer(time0); 
     }, 1000);
 }  
