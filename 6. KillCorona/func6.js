@@ -30,7 +30,7 @@ function startGame6()
     
     drawField6();
     drawVirus();
-    drawCount6(150);
+    drawCount6(50);
 }
 
 function clear6()
