@@ -1,0 +1,23 @@
+TURN(1)
+IF(CANMOVE = 1) {
+    GO
+    CONTINUE
+}
+
+TURN(-1)
+IF(CANMOVE = 1) {
+    GO
+    CONTINUE
+}
+
+TURN(-1)
+IF(CANMOVE = 1) {
+    GO
+    CONTINUE
+}
+
+TURN(-1)
+IF(CANMOVE = 1) {
+    GO
+    CONTINUE
+}
