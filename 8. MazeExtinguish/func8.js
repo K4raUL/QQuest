@@ -52,8 +52,8 @@ function drawField8()
 
 async function selectSection8(mx, my)
 {
-    var secx = ~~((mx - cleft3 - left8)/cell8W);
-    var secy = ~~((my - ctop3 - top8)/cell8H);
+    var secx = ~~((mx /*- cleft3*/ - left8)/cell8W);
+    var secy = ~~((my /*- ctop3*/- top8)/cell8H);
     
     ctx.drawImage(selsecpic, left8 + secx*cell8W - secx*6.5*cell8W/126, top8 + secy*cell8H - secy*6*cell8H/80, cell8W, cell8H);
     
