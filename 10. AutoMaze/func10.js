@@ -206,7 +206,7 @@ function drawMaze10()
 function drawCell10(i, j)
 {
     ctx.clearRect(left9 + i*cell9W, top9 + j*cell9H, cell9W, cell9H);
-    ctx.lineWidth = 4;
+    ctx.lineWidth = 3;
     ctx.strokeStyle = '#000000';
     ctx.beginPath();
         
@@ -232,7 +232,7 @@ function drawCell10(i, j)
 function drawBorder10()
 {
     ctx.beginPath();
-    ctx.lineWidth = 10;
+    ctx.lineWidth = 5;
     
     ctx.moveTo(left9, top9);
     ctx.lineTo(left9, top9 + cell9H*N);
