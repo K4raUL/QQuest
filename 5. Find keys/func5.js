@@ -84,7 +84,7 @@ function drawcount5()
 {
     ctx.clearRect(0, 0, cnv.width, cnv.height);
     
-    ctx.font = '200px serif';
+    ctx.font = '50px serif';
     ctx.fillText((trymax-try5), cnv.width/2, key5H);
     
 }
