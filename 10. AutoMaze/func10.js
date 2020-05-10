@@ -71,7 +71,7 @@ function clear10()
 
 function drawPlayer10()
 {
-    ctx.clearRect(left9 + prevX*cell9W + 2, top9 + prevY*cell9H + 2, cell9W - 4, cell9H - 4);
+    ctx.clearRect(left9 + prevX*cell9W + 1, top9 + prevY*cell9H + 1, cell9W - 2, cell9H - 2);
     
     prevX = pX;
     prevY = pY;
@@ -206,7 +206,7 @@ function drawMaze10()
 function drawCell10(i, j)
 {
     ctx.clearRect(left9 + i*cell9W, top9 + j*cell9H, cell9W, cell9H);
-    ctx.lineWidth = 3;
+    ctx.lineWidth = 2;
     ctx.strokeStyle = '#000000';
     ctx.beginPath();
         
@@ -232,7 +232,7 @@ function drawCell10(i, j)
 function drawBorder10()
 {
     ctx.beginPath();
-    ctx.lineWidth = 5;
+    ctx.lineWidth = 3;
     
     ctx.moveTo(left9, top9);
     ctx.lineTo(left9, top9 + cell9H*N);
