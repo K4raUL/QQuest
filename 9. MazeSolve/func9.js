@@ -155,7 +155,7 @@ function drawMaze()
 function drawCell(i, j)
 {
     ctx.clearRect(left9 + i*cell9W, top9 + j*cell9H, cell9W, cell9H);
-    ctx.lineWidth = 8;
+    ctx.lineWidth = 6;
     
     if (i == key[0] && j == key[1]) drawKey();
     if (i == x0 && j == y0+1 && part3 == 0) {
