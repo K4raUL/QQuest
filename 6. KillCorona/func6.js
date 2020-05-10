@@ -75,7 +75,7 @@ async function selectCase6(iter)
     ctx.clearRect(0, 0, cnv.width, cnv.height);
     drawField6();
     drawVirus();
-    drawCount6(150);    
+    drawCount6(50);    
 }
 
 function enemyTurn()
@@ -137,7 +137,7 @@ async function drawWin()
 {
     gameOver = 1;
     ctx.fillStyle = 'green';
-    drawCount6(400);
+    drawCount6(100);
     
     await sleep(1500);
     clear6();
@@ -151,7 +151,7 @@ async function drawDefeat()
 {
     gameOver = 1;
     ctx.fillStyle = 'red';
-    drawCount6(400);
+    drawCount6(100);
     
     await sleep(1500); 
     startGame6();
