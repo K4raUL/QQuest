@@ -71,7 +71,7 @@ function clear10()
 
 function drawPlayer10()
 {
-    ctx.clearRect(left9 + prevX*cell9W + 5, top9 + prevY*cell9H + 5, cell9W - 10, cell9H - 10);
+    ctx.clearRect(left9 + prevX*cell9W + 2, top9 + prevY*cell9H + 2, cell9W - 4, cell9H - 4);
     
     prevX = pX;
     prevY = pY;
@@ -84,10 +84,10 @@ function drawPlayer10()
     
     ctx.beginPath();
     
-    ctx.moveTo(-cell9W/2 + 6, -cell9H/2 + 6);
-    ctx.lineTo(-cell9W/2 + 6, cell9H/2 - 6);
-    ctx.lineTo(cell9W/2 - 6, 0);
-    ctx.lineTo(-cell9W/2 + 6, -cell9H/2 + 6);
+    ctx.moveTo(-cell9W/2 + 3, -cell9H/2 + 3);
+    ctx.lineTo(-cell9W/2 + 3, cell9H/2 - 3);
+    ctx.lineTo(cell9W/2 - 3, 0);
+    ctx.lineTo(-cell9W/2 + 3, -cell9H/2 + 3);
         
     ctx.fill();
     ctx.stroke();
